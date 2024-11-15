@@ -1,0 +1,66 @@
+Clone -> Bring a repository that is hosted somewhere 
+like Gihub into a folder on your local machine
+add -> Track your files and changes in Git
+commit -> save your files in git
+push -> Upload Git commits to remote repo, like Github
+pull -> Download changes from remote repo to your local machine,
+the opposite of push
+
+git --version -> check the version
+git clone sshlink -> pull into the repository to local
+git status -> look what your state
+// Note - when you show working tree is no changing anything unstage and commit
+git add . -> add all include the file
+git commit -m "first time" -> commit the file with message 
+-m = message that is nesscessay for commit
+git commit is stored in local machine
+so you have to //ssh in local to account
+git push origin main -> to push the repository
+git init -> it is start(need to connect)
+git remote add origin linkthatRepositoy -> it is connect local to account that are not from start "git Clone"
+git remote -v -> check if connect or not
+git push -u origin main -> push upstream 
+the -u flag sets origin/main as the default upstream branch for main, simplifying future pushes and pulls.
+git branch -> how many branch I created // Note - highlight will be my current branch
+git checkout -b "name of the branch" -> create and swtich to the name of the branch
+git checkout "name of the branch" -> swtich to the name of the branch
+git swtich feature -> same thing above line
+git diff "name of the branch"-> the different between name of branch and current branch
+// Press "q" to exit
+git branch -d "name of branch" -> delete the branch
+git commit -am "message" -> that will add and commit at the same time
+// Note - but it is only work in modified state, but  not creating file 
+git reset HEAD~1 -> back to the previous commit but not commit stage
+git log -> show history of commit and id
+git reset (commitid) -> go to the commit back not changing the local hosted
+git reset --hard (commitid) -> back to the time line and can not go back origin
+git reset --mixed (commitid) -> back to the time line and can not go back origin, back to unstage changes 
+git reset --soft (commitid) -> back to the time line and go back to origin , back to stage 
+git reset (commitid) -> defautl --mixed
+git log --oneline -> history of git commit with oneline
+git restore --stage -> back to the unstage
+git restore . -> back to previous stage
+// Note - stage is when commit line is complete
+
+
+// Ssh in local to account 
+#ssh-keygen -t rsa -b 4096 -C "aungkaungmyat5069@gmal.com"
+-t is what type I use 
+-b is what bit i want
+-C is what account i use
+#name the key 
+#skip other cmd
+#go to the that folder direction in cmd 
+they are two type of file
+1. extention is .pub is public key that will allow to see other
+1. without extention is private key you need to keep it.
+#type filename.pub
+#type filename.pub | clip 
+# go to the git hub website setting
+# go to ssh and blah 
+# click add key and paste it 
+
+
+// not working 
+if branch and main is not the same, I meant both are changes some code at the same file
+so git swtich "branch" is not working unless commit 
