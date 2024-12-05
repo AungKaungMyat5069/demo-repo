@@ -44,7 +44,7 @@ git restore . -> back to previous stage
 
 
 // Ssh in local to account 
-#ssh-keygen -t rsa -b 4096 -C "aungkaungmyat5069@gmal.com"
+#ssh-keygen -t rsa -b 4096 -C "aungkaungmyat5069@gmail.com"
 -t is what type I use 
 -b is what bit i want
 -C is what account i use
